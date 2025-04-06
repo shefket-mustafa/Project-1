@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import './header.css';
 
 export default function Header() {
@@ -7,11 +7,18 @@ export default function Header() {
       <div className="header-container">
 
     <div className="header-icon">
-        Some icon here
+        <NavLink to="/">🌞</NavLink>
+        <NavLink to="/">🌧️ </NavLink>
+        <NavLink to="/">⚡</NavLink>
+        <NavLink to="/">❄️</NavLink>
+    
+    
+    
+    
     </div>
 
     <div className="header-navigation">
-        
+    
 
         <Link to={'/'}>Home</Link>
         <Link to={'/weather'}>Weather</Link>
