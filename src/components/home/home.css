@@ -1,0 +1,77 @@
+.home-section {
+  flex: 1; 
+  min-height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #1e1e1e;
+  color: #ffcc70;
+  font-size: 20px;
+}
+
+.home-to-catalog {
+  padding: 10px 24px;
+  margin-top: 20px;
+  background-color: #ffcc70;
+  color: #1e1e1e;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 204, 112, 0.3);
+}
+
+.home-to-catalog:hover {
+  background-color: #ffd991;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.clouds {
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  width: 200px;
+  height: 100px;
+  background: #ffffff33;
+  border-radius: 100px;
+  animation: floatCloud 60s linear infinite;
+  z-index: 0;
+}
+
+@keyframes floatCloud {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+.raindrop {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 5px;
+  height: 15px;
+  background: #00c6ff;
+  animation: rain 1.5s infinite linear;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+@keyframes rain {
+  0% {
+    top: -20px;
+    opacity: 0.8;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
