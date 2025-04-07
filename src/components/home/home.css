@@ -52,26 +52,5 @@
   }
 }
 
-.raindrop {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  width: 5px;
-  height: 15px;
-  background: #00c6ff;
-  animation: rain 1.5s infinite linear;
-  border-radius: 50%;
-  opacity: 0.6;
-}
 
-@keyframes rain {
-  0% {
-    top: -20px;
-    opacity: 0.8;
-  }
-  100% {
-    top: 100%;
-    opacity: 0;
-  }
-}
 
