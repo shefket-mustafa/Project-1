@@ -15,7 +15,7 @@ export default function Home() {
             Welcome to our <strong>Weatherer</strong>
         </div>
 
-        <NavLink className="home-to-catalog">Forecastererer</NavLink>
+        <NavLink className="home-to-catalog">Forecast</NavLink>
         </section>
       </>
     );
