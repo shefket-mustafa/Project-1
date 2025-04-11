@@ -1,13 +1,16 @@
+import { useState } from 'react';
 import './forecast.css';
 
 export default function Forecast() {
+    const [input, setInput] = useState('');
+
   return (
 
     <>
     <div className='search'>
         <div className="search-container">
-        <input type="text" className="search-input" placeholder="What is the weather like in your city?" />
-        <button className='search-btn'>Search</button>
+        <input type="text" onChange={(e) => setInput(e.target.value)} className="search-input" placeholder="What is the weather like in your city?" />
+        <button onClick={() => console.log(input)} className='search-btn'>Search</button>
         </div>
 
         <section className="forecast-container">
