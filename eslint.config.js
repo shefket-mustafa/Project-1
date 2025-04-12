@@ -35,7 +35,8 @@ export default [
       ],
       'no-unused-vars':'off',
       'no-empty': 'off',
-      'react/prop-types':'off'
+      'react/prop-types':'off',
+      'no-useless-catch':'off'
     },
   },
 ]
