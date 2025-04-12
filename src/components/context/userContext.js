@@ -4,6 +4,8 @@ export const UserContext = createContext({
     data: '',
     inputHandler: () => null,
     searchHandler: () => null,
+    errorHandler: () => null,
+
 
 })
 
