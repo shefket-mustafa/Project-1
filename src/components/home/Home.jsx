@@ -1,13 +1,14 @@
 import { NavLink } from 'react-router';
 import './home.css'
 import Rain from '../rain/Rain';
+import Snow from '../snow/Snow';
 
 export default function Home() {
 
   return (
       <>
 
-      <Rain />
+      <Snow />
 
       <section className="home-section">
 
