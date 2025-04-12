@@ -4,24 +4,21 @@ import './forecast.css';
 import { useUserContext } from '../context/userContext';
 
 import Rain from '../rain/Rain';
+import Snow from '../snow/Snow';
 
 export default function Forecast() {
-        const {inputHandler, searchHandler, data} = useUserContext();
-        const [theme, setTheme] = useState('');
+        const {inputHandler, searchHandler, data, theme} = useUserContext();
         
-        useEffect(() => {
-            if(data) {
-                if(data.current?.condition.text.toLowerCase().includes('sunny')){
-                    setTheme('rainy')
-                }
-            }
-        },[data])
 
   return (
 
     <>
-        {theme === 'rainy' ? <Rain/> : ''}
-    <div className='search'>
+
+    {theme === 'rainy' && <Rain />}
+    {theme === 'snowy' && <Snow />}
+    
+
+    <div className={`search ${theme}`}>
         <div className="search-container">
         <input type="text" onChange={(e) => inputHandler(e.target.value)} className="search-input" placeholder="What is the weather like in your city?" />
         <button onClick={searchHandler} className='search-btn'>Search</button>
