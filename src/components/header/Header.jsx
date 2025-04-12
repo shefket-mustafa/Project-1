@@ -2,6 +2,8 @@ import { Link, NavLink } from "react-router";
 import './header.css';
 
 export default function Header() {
+
+  
   return (
       <>
       <div className="header-container">
@@ -9,7 +11,7 @@ export default function Header() {
     <div className="header-icon">
         <NavLink to="/">🌞</NavLink>
         <NavLink to="/">🌧️ </NavLink>
-        <NavLink to="/">⚡</NavLink>
+        <NavLink to="/">☁️</NavLink>
         <NavLink to="/">❄️</NavLink>
     
     

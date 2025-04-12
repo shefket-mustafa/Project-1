@@ -2,7 +2,7 @@ const baseUrl = 'http://api.weatherapi.com/v1/current.json?key=9301fa1d112843ef8
 
 export  const requester = async (city) => {
 
-    if(city === ''){
+    if(!city){
         return;
     };
     try{
@@ -11,6 +11,6 @@ export  const requester = async (city) => {
 
         return data;
     }catch(err){
-        console.alert(err.message);
+        throw new Error('We can\'t find your city!')
     }
 }

@@ -1,0 +1,32 @@
+.snow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .snowdrop {
+    position: absolute;
+    top: -20px;
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    opacity: 0.6;
+    border-radius: 50%;
+    animation: rain 3s linear infinite;
+  }
+  
+  @keyframes snow {
+    0% {
+      top: -20px;
+      opacity: 0.8;
+    }
+    100% {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+  

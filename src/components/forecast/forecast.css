@@ -38,7 +38,7 @@
   
   .forecast-form input:disabled {
     opacity: 0.8;
-    color: #888;
+    color: white;
   }
   
   .forecast-form input::placeholder {
@@ -117,4 +117,20 @@
     color: #1e1e1e;
   }
   
+  .search.sunny {
+    background-image: url('../../../public/images/sun.png');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  
+  .search.cloudy {
+    background-image: url('/images/cloudy.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    
+  }
   

@@ -5,12 +5,20 @@ import Home from "./components/home/Home"
 import './index.css'
 import About from "./components/about/About"
 import Forecast from "./components/forecast/Forecast"
+import { useState } from "react"
+import UserProvider from "./components/context/UserProvider"
 
 function App() {
+  const [clickedIcon, setClickedIcon] = useState(false);
   
+  const iconHandler = () => {
+    setClickedIcon(true);
+  }
 
   return (
     <>
+
+    <UserProvider>
     <Header />
     <Routes>
 
@@ -22,7 +30,7 @@ function App() {
 
     </Routes>
     <Footer />
-
+    </UserProvider>P
     </>
 
   )
