@@ -1,31 +1,18 @@
 import { useEffect, useState } from 'react';
 import './forecast.css';
 import { requester } from '../../api/requester';
+import { useUserContext } from '../context/userContext';
 
 export default function Forecast() {
-    const [input, setInput] = useState('');
-    const [data, setData] = useState({});
-    const [isSearchedClicked, setIsSearchClicked] = useState(false);
+        const {inputHandler, searchHandler, data} = useUserContext();
 
-    useEffect(()=>{
-        if(isSearchedClicked){
-            const result = requester(input)
-            .then(result => setData(result));
-            setIsSearchClicked(false);
-        };
-    },[input,isSearchedClicked]);
-
-    const searchHandler = () =>{
-        setIsSearchClicked(true)
-        console.log(data.current);
-    };
 
   return (
 
     <>
     <div className='search'>
         <div className="search-container">
-        <input type="text" onChange={(e) => setInput(e.target.value)} className="search-input" placeholder="What is the weather like in your city?" />
+        <input type="text" onChange={(e) => inputHandler(e.target.value)} className="search-input" placeholder="What is the weather like in your city?" />
         <button onClick={searchHandler} className='search-btn'>Search</button>
         </div>
 
