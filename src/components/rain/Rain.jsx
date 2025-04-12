@@ -1,4 +1,4 @@
-import './Rain.css';
+import './rain.css';
 
 export default function Rain() {
   const drops = Array.from({ length: 30 });
