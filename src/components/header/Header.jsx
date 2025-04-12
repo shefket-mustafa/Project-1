@@ -9,7 +9,7 @@ export default function Header() {
     <div className="header-icon">
         <NavLink to="/">🌞</NavLink>
         <NavLink to="/">🌧️ </NavLink>
-        <NavLink to="/">⚡</NavLink>
+        <NavLink to="/">☁️</NavLink>
         <NavLink to="/">❄️</NavLink>
     
     

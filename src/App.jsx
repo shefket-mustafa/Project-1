@@ -5,9 +5,14 @@ import Home from "./components/home/Home"
 import './index.css'
 import About from "./components/about/About"
 import Forecast from "./components/forecast/Forecast"
+import { useState } from "react"
 
 function App() {
+  const [clickedIcon, setClickedIcon] = useState(false);
   
+  const iconHandler = () => {
+    setClickedIcon(true);
+  }
 
   return (
     <>
