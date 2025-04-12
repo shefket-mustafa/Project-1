@@ -11,7 +11,6 @@ export  const requester = async (city) => {
 
         return data;
     }catch(err){
-        
         throw new Error('We can\'t find your city!')
     }
 }
