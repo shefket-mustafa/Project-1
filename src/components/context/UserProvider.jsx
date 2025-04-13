@@ -14,6 +14,8 @@ export default function UserProvider({children}) {
 
     useEffect(() => {
         if (!isSearchedClicked) return;
+
+        if(!input) return;
     
         requester(input)
           .then(result => {
