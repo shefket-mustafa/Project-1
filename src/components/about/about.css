@@ -19,21 +19,6 @@
     z-index: 0;
     pointer-events: none; 
   }
-  
-  @keyframes moveClouds {
-    0% { background-position: 0 0; }
-    100% { background-position: 1000px 0; }
-  }
-  
-
-  .about-preview {
-    max-width: 600px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-
-    animation: fadeIn 1s ease-in-out;
-}
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(30px); }
