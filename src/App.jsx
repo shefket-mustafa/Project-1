@@ -7,6 +7,7 @@ import About from "./components/about/About"
 import Forecast from "./components/forecast/Forecast"
 import { useState } from "react"
 import UserProvider from "./components/context/UserProvider"
+import Contact from "./components/contact/Contact"
 
 function App() {
   const [clickedIcon, setClickedIcon] = useState(false);
@@ -25,6 +26,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/weather" element={<Forecast />} />
+    <Route path="/contact" element={<Contact />} />
 
 
 
